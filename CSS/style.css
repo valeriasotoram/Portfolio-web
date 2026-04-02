@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #405E94F2;
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    padding: 24px;
+}
+
+nav > ul {
+    display: flex;
+
+}
+
+
+nav > ul > li > a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav > ul > li > a:hover {
+    color: white;
+}
+
+header{
+    padding: 80px 0;
+    display: flex;
+    row-gap: 80px ;
+    column-gap: 200px ;
+    justify-content: center;
+    align-items: center;
+}
