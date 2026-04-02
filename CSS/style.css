@@ -1,10 +1,28 @@
+
+/* <weight>: Use a value from 300 to 700
+.space-grotesk-<uniquifier> {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
     background-color: #405E94F2;
     scroll-behavior: smooth;
 }
+
+.aboreto-regular {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 nav{
     display: flex;
