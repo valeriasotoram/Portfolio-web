@@ -6,6 +6,7 @@
   font-weight: <weight>;
   font-style: normal;
 } */
+
 body{
     background-color: #405E94;
     font-family: "Space Grotesk", sans-serif;
@@ -56,6 +57,8 @@ img{
     height: auto;
 }
 
+/* MENU */
+
 nav{
     display: flex;
     justify-content: end;
@@ -73,8 +76,10 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-    color:white;
+    color: white;
 }
+
+/* ABOUT ME & BOOK */
 
 header{
     padding: 80px 0;
@@ -135,6 +140,14 @@ header{
     transition: color 0.2s ease-in-out;
 }
 
+.icons a i:hover,
+#contact a:hover i,
+#contact a:hover h2 {
+    color: #e2e0ea;
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+}
+    
 
 .icon a img {
     width: 36px;
@@ -142,9 +155,70 @@ header{
     object-fit: contain;
 }
 
+.icons a i:hover,
+#contact a:hover i,
+#contact a:hover h2 {
+    color: #e2e0ea;
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.icons a img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.b_contact {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 2px #B4B3B3;
+    transition: all 0.2s ease-in-out;
+}
+
+.b_contact:hover {
+    border-color: #e2e0ea;
+    background-color: #e2e0ea;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* BOOK */
+
+.content div{
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    gap: 12px;
+}
+
+
+/* TOOLS */
 #contact {
     flex-direction: column;
     align-items: start;
     justify-content: center;
     margin: 0 5%;
+}
+
+#contact a {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+#contact a i,
+#contact a h2 {
+    transition: all 0.3s ease-in-out;
+}
+
+#contact a h2 {
+    margin-bottom: 0;
 }
