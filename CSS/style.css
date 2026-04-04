@@ -6,14 +6,16 @@
   font-weight: <weight>;
   font-style: normal;
 } */
+body{
+    background-color: #405E94;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+}
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Space Grotesk", sans-serif;
-    font-style: normal;
-    background-color: #405E94F2;
     scroll-behavior: smooth;
 }
 
@@ -54,15 +56,6 @@ img{
     height: auto;
 }
 
-
-
-.aboreto-regular {
-  font-family: "Aboreto", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 nav{
     display: flex;
     justify-content: end;
@@ -74,14 +67,13 @@ nav > ul {
 
 }
 
-
 nav > ul > li > a {
     font-size: 18px;
     font-weight: bold;
 }
 
 nav > ul > li > a:hover {
-    color: white;
+    color:white;
 }
 
 header{
@@ -98,5 +90,46 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: end;
-    gap: 40 px;
+    gap: 40px;
 }
+
+.book {
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.p_section div :first-child {
+    width: 28%;
+    overflow: hidden;
+}
+.p_section div :first-child img {
+    border-radius: 15px;
+}
+
+.p_section div :last-child{
+    flex: 1;
+}
+
+.p_section div :last-child h1{
+    line-height: 80px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin: 24px 0;
+}
+
+.icons a {
+    align-items: center;
+    transition: trasnform 0.2s ease;
+}
+
+.icon a i,
+#contact a i {
+    font-size: 36px;
+    transition: color 0.2s ease-in-out;
+}
+
+
+
