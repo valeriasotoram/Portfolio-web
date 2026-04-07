@@ -5,6 +5,7 @@ html {
 
 body{
     background-color: #405E94;
+   
 }
 
 *{
@@ -418,7 +419,6 @@ header{
 
     .p_section div:first-child {
         width: 80px;
-
     }
 
 }
