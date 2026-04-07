@@ -124,15 +124,17 @@ header{
 }
 
 .icons a {
+    display: inline-flex;
     align-items: center;
     transition: trasnform 0.2s ease;
+    text-decoration: none;
 }
 
 .icons a:hover {
     transform: translateY(-3px);
 }
 
-.icon a i {
+.icons a i {
     font-size: 36px;
     color: #B4B3B3;
     transition: 0.3s;
@@ -141,7 +143,7 @@ header{
 .icons a:hover i {
     color: #e2e0ea;
 }
-.icon a img {
+.icons a img {
     width: 36px;
     height: 36px;
     object-fit: contain;
@@ -317,5 +319,65 @@ header{
 
 #contact a:hover i {
    color: #e2e0ea;
+
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 720px) {
+
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    h1
+    .section_book h1 {
+        font-size: 52px;
+        line-height: 56px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    
+    nav > ul {
+        gap: 16px;
+    }
+
+    nav > ul > li > a {
+        font-size: 18px;
+    }
+
+    header {
+        height: auto;
+        padding: 65px 0;
+    }
+    .p_section {
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+    
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    /* Con opacity el elemento se vuelve transparente */
+    /* header > div:last-child {
+        opacity: 0;
+    } */
+
+    header > div:last-child {
+        display: none;
+    }
+
+    #gallery > ul > li {
+        flex: 100%;
+    }
 
 }
