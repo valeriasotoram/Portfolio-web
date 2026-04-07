@@ -5,7 +5,6 @@ html {
 
 body{
     background-color: #405E94;
-   
 }
 
 *{
@@ -100,18 +99,18 @@ header{
     gap: 80px;
 }
 
-.p_section div :first-child {
+.p_section div:first-child {
     width: 320px;
 }
-.p_section div :first-child img {
+.p_section div:first-child img {
     border-radius: 15px;
 }
 
-.p_section div :last-child{
+.p_section div:last-child{
     flex: 1;
 }
 
-.p_section div :last-child h1{
+.p_section div:last-child h1{
     line-height: 80px;
 }
 
@@ -358,26 +357,68 @@ header{
         gap: 30px;
     }
 
+    .p_section div:first-child {
+        width: auto;
+    }
+    .p_section div:first-child img {
+        height: stretch;
+    }
+
+    #tools div {
+        justify-content: center;
+    }
+    #tools div img {
+        width: 160px;
+        height: auto;
+    }
+
+    .p_section div:first-child {
+        width: 60%;
+    }
+
+    .book div:first-child img {
+        height: auto;
+    }
+
 }
 
 /* MOBILE */
 @media screen and (max-width: 480px) {
     
-    .wrapper {
-        padding: 0 10px;
+    h1 {
+        font-size: 38px;
+        line-height: 42px;
     }
 
-    /* Con opacity el elemento se vuelve transparente */
-    /* header > div:last-child {
-        opacity: 0;
-    } */
-
-    header > div:last-child {
-        display: none;
+    h2 {
+        font-size: 20px;
     }
 
-    #gallery > ul > li {
-        flex: 100%;
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    nav > ul{
+        gap: 18px;
+    }
+
+    nav > ul > li > a {
+        font-size: 16px;
+    }
+
+    .p_section {
+        padding: 0 20 px;
+        padding-top: 10%;
+        gap: 20px;
+    }
+
+    .p_section div:first-child {
+        width: 80px;
+
     }
 
 }
