@@ -20,6 +20,7 @@ h1{
     font-size: 80px;
     font-weight: 500;
     color: #e2e0ea;
+    line-height: 80px;
 }
 
 h2{
@@ -335,6 +336,10 @@ header{
         line-height: 56px;
     }
 
+    h2{
+        font-size: 26px;
+    }
+
     p{
         font-size: 16px;
     }
@@ -368,17 +373,50 @@ header{
     #tools div {
         justify-content: center;
     }
+
     #tools div img {
         width: 160px;
         height: auto;
     }
+    #tools div p,
+    #sinopsis p {
+        margin: 4% 6%;
 
+    }
     .p_section div:first-child {
         width: 60%;
     }
 
     .book div:first-child img {
         height: auto;
+    }
+
+    #posters .p_info .card {
+        width: 45%;
+    }
+
+    #branding .b_info,
+    #typography .t_info{
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    #typography .t_info {
+        flex-direction: column;
+    }
+
+    #branding .b_info > div:first-child
+    #typography .t_info > div:first-child{
+        justify-content: center;
+    }
+
+    #contact{
+        height: 100%;
+    }
+
+    #contact a {
+        gap: 20px;
     }
 
 }
@@ -421,4 +459,12 @@ header{
         width: 80px;
     }
 
+    #tools div img{
+        width: 120px;
+
+    }
+
+    #posters{
+        padding: 24% 0;
+    }
 }
