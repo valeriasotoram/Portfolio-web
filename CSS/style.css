@@ -57,6 +57,7 @@ img{
     width: 325px;
     height: auto;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 /* MENU */
@@ -77,7 +78,7 @@ nav > ul > li > a {
     font-size: 22px;
     font-weight: bold;
     color: #B4B3B3;
-    transition: 0.3s;
+    transition: all 0.2s ease-in-out;
 }
 
 nav > ul > li > a:hover {
@@ -87,11 +88,13 @@ nav > ul > li > a:hover {
 /* ABOUT ME*/
 
 header{
+    height: 100%;
     padding: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .p_section{
     margin: 0;
     padding:0 40px;
@@ -105,6 +108,7 @@ header{
     width: 320px;
 }
 .p_section div:first-child img {
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -114,6 +118,11 @@ header{
 
 .p_section div:last-child h1{
     line-height: 80px;
+}
+
+.book{
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 /* ICONS AND BOTTON */
@@ -127,7 +136,7 @@ header{
 .icons a {
     display: inline-flex;
     align-items: center;
-    transition: trasnform 0.2s ease;
+    transition: transform 0.2s ease;
     text-decoration: none;
 }
 
