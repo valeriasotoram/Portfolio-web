@@ -1,11 +1,8 @@
-
-html {
-    scroll-behavior: smooth;
-}
-
-body{
-    background-color: #405E94;
-   
+:root{
+    --black-color: #000000;
+    --blue-color: #405d94;
+    --grey-color: #b4b3be;
+    --white-color: #e2e0ea;
 }
 
 *{
@@ -15,12 +12,13 @@ body{
     font-family: "Space Grotesk", sans-serif;
     font-style: normal;
     scroll-behavior: smooth;
+    background-color: var(--blue-color);
 }
 
 h1{
     font-size: 80px;
     font-weight: 500;
-    color: #e2e0ea;
+    color: var(--white-color);
     line-height: 80px;
 }
 
@@ -46,8 +44,8 @@ p {
 span{
     font-family: "Aboreto", sans-serif;
     font-weight: normal;
-    color: black;
-    background-color: #e2e0ea;
+    color: var(--black-color);
+    background-color:var(--white-color);
 }
 
 a {
@@ -55,7 +53,7 @@ a {
 }
 
 img{
-    width: 325px;
+    width: 100%;
     height: auto;
     border-radius: 15px;
     object-fit: cover;
@@ -66,37 +64,36 @@ img{
 nav{
     display: flex;
     justify-content: flex-end;
-    padding: 24px 40px;
-    
+    padding: 20px 2%;
+    position: fixed;
+    width: 100%;
 }
 
 nav > ul {
     display: flex;
-    gap: 40px;
+    gap: 24px;
     list-style: none;
 }
 
 nav > ul > li > a {
     font-size: 22px;
     font-weight: bold;
-    color: #B4B3B3;
+    color: var(--grey-color);
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 nav > ul > li > a:hover {
-    color: white;
+    color: var(--white-color);
 }
 
 /* ABOUT ME*/
 
 header{
     height: 100%;
-    padding: 80px 40px;
+    padding: 45px 0px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    gap: 80px;
+    align-items: end;
 }
 
 .p_section{
@@ -119,28 +116,28 @@ header{
 .content{
     flex: 1;
     max-width: 900px;
-    color: #e2e0ea;
+    color: var(--white-color);
 }
 
 .content h1{
     font-size: 64px;
     font-weight: 900;
     line-height: auto;
-    color: #e2e0ea;
+    color: var(--white-color);
     margin-bottom: 16px;
 }
 
 .content h2{
     font-size: 32px;
     font-weight: 400;
-    color: #e2e0ea;
+    color: var(--white-color);
     margin-bottom: 16px;
 }
 
 .content p{
     font-size: 18px;
     font-weight: 400;
-    color: #e2e0ea;
+    color: var(--white-color);
     margin-bottom: 16px;
     max-width: 700px;
 }
@@ -148,7 +145,7 @@ header{
 .content > a{
     padding: 10px 40px;
     font-size: 18px;
-    color: #e2e0ea;
+    color: var(--white-color);
     display: inline-flex;
     border-radius: 30px;
     border: 1.5px solid #e2e0ea;
@@ -183,12 +180,12 @@ header{
 
 .icons a i {
     font-size: 36px;
-    color: #B4B3B3;
+    color: var(--grey-color);
     transition: 0.3s;
 }
 
 .icons a:hover i {
-    color: #e2e0ea;
+    color: var(--white-color);
 }
 .icons a img {
     width: 36px;
@@ -203,14 +200,14 @@ header{
     cursor: pointer;
     font-size: 18px;
     margin-top: 10px;
-    color:#e2e0ea;
+    color: var(--white-color);
     transition: 0.2s ease-in-out;
 }
 
 .b_contact:hover {
     border-color: #e2e0ea;
-    background-color: #e2e0ea;
-    color: black;
+    background-color: var(--white-color);
+    color: var(--black-color);
     font-weight: 500;
 }
 
@@ -234,7 +231,7 @@ header{
 
 .section_book > div:last-child{
     text-align: left;
-    color: #e2e0ea;
+    color: var(--white-color);
 }
 
 .section_book > div:last-child h1 {
@@ -244,7 +241,7 @@ header{
 
 .section_book h3 {
     font-size: 20px;
-    color: black;
+    color: var(--black-color);
     margin-bottom: 4px;
 }
 
@@ -308,7 +305,7 @@ header{
 #tools > div:last-child > p {
     
     font-size: 18px;
-    color: #B4B3B3;
+    color: var(--grey-color);
     width: 320px;
     text-align: left;
     margin: 0;
@@ -319,7 +316,7 @@ header{
     font-size: 40px;
     font-weight: 400;
     font-family: "Aboreto", sans-serif;
-    background-color: #e2e0ea;
+    background-color: var(--white-color);
     color: black;
     text-align: center;
     padding: 20px 0;
@@ -329,16 +326,16 @@ header{
 
 
 #tools h2{
-    background-color: #e2e0ea;
-    color: black;
+    background-color: var(--white-color);
+    color: var(--black-color);
     text-align: center;
     padding: 20px 0;
     margin-bottom: 60px;
     width: 100%;
 }
 #sinopsis h2 {
-    background-color: #e2e0ea;
-    color: black;
+    background-color: var(--white-color);
+    color: var(--black-color);
     text-align: center;
     padding: 20px 0;
     margin-bottom: 60px;
@@ -346,8 +343,8 @@ header{
 }
 
 #branding h2 {
-    background-color: #e2e0ea;
-    color: black;
+    background-color: var(--white-color);;
+    color: var(--black-color);
     text-align: center;
     padding: 20px 0;
     margin-bottom: 60px;
