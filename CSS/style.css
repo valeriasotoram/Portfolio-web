@@ -96,21 +96,26 @@ header{
     align-items: end;
 }
 
-.p_section{
-    margin: 0;
-    padding:0 ;
+.p_section {
+    margin: 0 auto;
+    padding:0 36px;
     display: flex;
-    align-items: center;
-    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    gap: 40px;
 }
 
 .p_section > div:first-child {
-    width: 535px;
+    width: 30%;
+    overflow: hidden;
 }
 .p_section > div:first-child > img {
-    width: 100%;
     border-radius: 15px;
-    object-fit: cover;
+}
+
+.p_section > div:last-child{
+    flex: 1;
 }
 
 .content{
@@ -163,25 +168,24 @@ header{
 
 .icons {
     display: flex;
-    gap: 24px;
+    gap: 15px;
     margin: 24px 0;
 }
 
 .icons a {
-    display: inline-flex;
     align-items: center;
     transition: transform 0.2s ease;
-    text-decoration: none;
 }
 
 .icons a:hover {
     transform: translateY(-3px);
 }
 
-.icons a i {
+.icons a i,
+#contact a i{
     font-size: 36px;
     color: var(--grey-color);
-    transition: 0.3s;
+    transition: color 0.3s ease-in-out;
 }
 
 .icons a:hover i {
@@ -352,8 +356,8 @@ header{
 }
 
 #typography h2 {
-    background-color: #e2e0ea;
-    color: black;
+    background-color: var(--white-color);;
+    color: var(--black-color);
     text-align: center;
     padding: 20px 0;
     margin-bottom: 60px;
@@ -361,8 +365,8 @@ header{
 }
 
 #posters h2 {
-    background-color: #e2e0ea;
-    color: black;
+    background-color: var(--white-color);;
+    color: var(--black-color);
     text-align: center;
     padding: 20px 0;
     margin-bottom: 60px;
