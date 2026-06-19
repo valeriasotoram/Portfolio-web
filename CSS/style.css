@@ -215,21 +215,38 @@ header {
 }
 
 .b_contact {
-    display: flex;
+    display: inline-block;
     padding: 10px 40px;
     border-radius: 30px;
     cursor: pointer;
     font-size: 18px;
     margin-top: 10px;
     color: var(--white-color);
-    transition: 0.2s ease-in-out;
+    border: 2px solid var(--grey-color);
+    transition: all 0.2s ease-in-out;
 }
 
 .b_contact:hover {
-    border-color: #e2e0ea;
+    border-color: var(--white-color);
     background-color: var(--white-color);
     color: var(--black-color);
     font-weight: 500;
+}
+
+/* HEADING */
+
+#tools h2,
+#synopsis h2,
+#branding h2,
+#typography h2,
+#posters h2{
+    width: 100%;
+    margin-bottom: 8%;
+    height: 8vh;
+    text-align: center;
+    align-content: center;
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
 
 
