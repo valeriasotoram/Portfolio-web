@@ -411,13 +411,13 @@ header {
     gap: 50px;
 }
 
-#contact a i {
-    font-size: 36PX;
+#contact a i, 
+#contact a h2{
     transition: all 0.3s ease-in-out;
 }
 
-#contact a:hover i {
-   color: #e2e0ea;
+#contact a h2 {
+   margin-bottom: 0;
 
 }
 
