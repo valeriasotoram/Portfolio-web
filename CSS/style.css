@@ -395,6 +395,39 @@ header {
     width: 100%;
 }
 
+/* PROJECTS*/
+#posters,
+#typography{
+    padding: 10% 0;
+}
+#typography .t_info{
+    flex-direction: row-reverse;
+}
+
+#branding .b_info,
+#typography .t_info{
+    height: fit-content;
+    margin: 0 2%;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 45px;
+}
+#branding .b_info > div:first-child,
+#typography .t_info > div:first-child{
+    min-width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#branding .b_info > div:first-child img,
+#typography .t_info > div:first-child img{
+    height: auto;
+    object-fit: cover;
+    min-width: 130px;
+    border-radius: 20px;
+}
+
 /* CONTACT ME */
 
 #contact {
