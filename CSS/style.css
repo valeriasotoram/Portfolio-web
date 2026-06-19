@@ -452,6 +452,65 @@ header {
     background-color: #C15AA5;
 }
 
+/* POSTERS */
+
+#posters .p_info {
+    padding-bottom: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+#posters .p_info .card {
+    width: 23%;
+    min-width: 180px;
+    position: relative;
+}
+
+#posters .p_info .card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#posters .p_info .card:hover img {
+    transform: translateY(-5px);
+}
+
+#posters .p_info .card a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.2s;
+    opacity: 0;
+    text-decoration: none;
+}
+
+#posters .p_info .card:hover a{
+    opacity: 1;
+}
+
+#posters .p_info > div > a,
+#posters .p_info > div > a h3{
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+#posters .p_info > div > a h3:hover {
+    color: var(--grey-color);
+}
+
 
 /* CONTACT ME */
 
