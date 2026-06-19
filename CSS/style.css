@@ -64,14 +64,15 @@ img{
 nav{
     display: flex;
     justify-content: flex-end;
-    padding: 20px 2%;
+    padding: 24px 76px;
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 
 nav > ul {
     display: flex;
-    gap: 24px;
+    gap: 40px;
     list-style: none;
 }
 
@@ -91,7 +92,7 @@ nav > ul > li > a:hover {
 
 header {
     height: 100%;
-    padding: 45px 0px;
+    padding: 24px 16px;
     display: flex;
     align-items: end;
 }
@@ -119,8 +120,11 @@ header {
 }
 
 .content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     flex: 1;
-    max-width: 900px;
+    max-width: 700px;
     color: var(--white-color);
 }
 
@@ -143,6 +147,13 @@ header {
     font-weight: 500;
 }
 
+.content h1,
+.content h2,
+.content p {
+    width: 100%;
+
+}
+
 .content p{
     font-size: 18px;
     font-weight: 400;
@@ -159,6 +170,7 @@ header {
     border-radius: 30px;
     border: 1.5px solid var(--white-color);
     margin-top: 10px;
+    align-self: flex-start;
 }
 
 .content > div {
@@ -166,6 +178,10 @@ header {
     text-align: center;
     align-items: baseline;
     gap: 12px;
+}
+
+.content .icons{
+    width: auto;
 }
 
 .c_book h1{
@@ -427,6 +443,7 @@ header {
     min-width: 130px;
     border-radius: 20px;
 }
+
 /* BRANDING */
 
 .circles{
@@ -541,74 +558,62 @@ header {
 /* MEDIA QUERIES */
 @media screen and (max-width: 720px) {
 
-    .wrapper {
-        padding: 0 20px;
-    }
-
     h1,
-    .section_book h1 {
-        font-size: 42px;
-        line-height: 48px;
+    .c_book h1 {
+        font-size: 52px;
+        line-height: 56px;
     }
-
     h2{
         font-size: 26px;
-    }
-
-    h3{
-        font-size: 20px;
     }
 
     p{
         font-size: 16px;
     }
-    
-    nav{
-        padding: 16px 20px;
-    }
 
     nav > ul {
-        gap: 20px;
+        gap: 16px;
     }
 
     nav > ul > li > a {
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    header {
+    header{
         height: auto;
-        padding: 40px 30px;
-        gap: 40px;
+        padding: 65px 0;
     }
-    .p_section {
-        padding-top: 10px;
+     
+    .p_section{
+        padding-top: 10%;
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
     }
 
-    .p_section > div:first-child {
-        width: 200px;
-    }
-    .p_section > div:first-child >img {
-        height: stretch;
-        width: 100px;
+    .p_section div:first-child{
+        width: auto;
     }
 
-    #tools > div {
+    .p_section div:first-child img{
+        height: stretch;
+    }
+
+    #tool div{
         justify-content: center;
     }
 
-    #tools > div > img {
-        width: 80px;
+    #tool div img {
+        width: 160px;
         height: auto;
     }
-    #tools > div > p,
-    #sinopsis p {
-        margin: 4% 6%;
 
+    #tool div p,
+    #synosis p{
+        margin: 4% 6%;
     }
-    .p_section div:first-child {
+
+    .p_section div:first-child{
         width: 60%;
     }
 
@@ -616,7 +621,7 @@ header {
         height: auto;
     }
 
-    #posters .p_info .card {
+    #posters .p_info .card{
         width: 45%;
     }
 
@@ -625,23 +630,6 @@ header {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
-    }
-
-    #typography .t_info {
-        flex-direction: column;
-    }
-
-    #branding .b_info > div:first-child,
-    #typography .t_info > div:first-child{
-        justify-content: center;
-    }
-
-    #contact{
-        height: 100%;
-    }
-
-    #contact a {
-        gap: 20px;
     }
 
 }
